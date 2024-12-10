@@ -5,7 +5,7 @@ const aes256 = require("aes-everywhere");
 
 let client = {
     nome: "Leonardo Pimentel Lopes Filho",
-    cpf: "097.455.299-23",
+    cpf: "09745529923",
     nascimento: "12/11/2001",
     idExternoCliente: "1PROVADV",
     workflow: "LB",
@@ -17,7 +17,8 @@ const chave = "AWLiveness050924";
 
 let message = JSON.stringify(client);
 
-const clientEncrypted = aes256.encrypt(message, "AWLiveness050924");
+const clientEncrypted = encodeURIComponent(aes256.encrypt(message, "AWLiveness050924")); 
+
 
 // const decodedCiphertext = decodeURIComponent(nunes);
 // const decryptedMessage = aes256.decrypt(decodedCiphertext, chave);
