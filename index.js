@@ -8,7 +8,7 @@ let client = {
     cpf: "097.455.299-23",
     nascimento: "12/11/2001",
     idExternoCliente: "1PROVADV",
-    workflow: "L",
+    workflow: "LB",
     accessKey: "Dnge3jUSawtJ88NXwVEGKg==",
     urlCallback: "https://testes-api-liveness.onrender.com/Callback",
 }
